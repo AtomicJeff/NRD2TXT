@@ -91,7 +91,8 @@
 copy "C:\Program Files (x86)\NinjaTrader 8\bin\MySql.Data.dll" "$(TargetDir)"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>
+    <PostBuildEvent>copy "C:\Users\jeffrey\Downloads\NRD2TXT-master\NRD2TXT-master\NRDConvertToTxt\AgileDotNetRTPro.dll "$(TargetDir)"
+
 
 copy "C:\Program Files (x86)\NinjaTrader 8\bin\SharpDX.dll" "$(TargetDir)"
 copy "C:\Program Files (x86)\NinjaTrader 8\bin\SharpDX.Direct2D1.dll" "$(TargetDir)"
