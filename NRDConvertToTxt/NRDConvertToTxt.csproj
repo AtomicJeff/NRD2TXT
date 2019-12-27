@@ -55,11 +55,11 @@
   <ItemGroup>
     <Reference Include="NinjaTrader.Core, Version=8.0.18.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Downloads\NRDConverter\NinjaTrader.Core.dll</HintPath>
+      <HintPath>.\NinjaTrader.Core.dll</HintPath>
     </Reference>
     <Reference Include="NinjaTrader.VMRuntime, Version=6.3.2.1, Culture=neutral, PublicKeyToken=8df7194b9dc850cb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Downloads\NRDConverter\NinjaTrader.VMRuntime.dll</HintPath>
+      <HintPath>.\NinjaTrader.VMRuntime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
