@@ -49,6 +49,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="NinjaTrader.Core, Version=8.0.18.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -85,13 +88,19 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="AgileDotNetRTPro.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>copy "C:\Program Files (x86)\NinjaTrader 8\bin\AgileDotNetRTPro.dll "$(TargetDir)"
 copy "C:\Program Files (x86)\NinjaTrader 8\bin\MySql.Data.dll" "$(TargetDir)"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>copy "C:\Users\jeffrey\Downloads\NRD2TXT-master\NRD2TXT-master\NRDConvertToTxt\AgileDotNetRTPro.dll "$(TargetDir)"
+    <PostBuildEvent>copy "C:\Program Files (x86)\NinjaTrader 8\bin\AgileDotNetRTPro.dll "$(TargetDir)"
+
 
 
 copy "C:\Program Files (x86)\NinjaTrader 8\bin\SharpDX.dll" "$(TargetDir)"
